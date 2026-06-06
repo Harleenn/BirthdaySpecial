@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Man</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="loginScreen" class="screen active">
+
+<div class="card">
+
+<h2>🔒 RESTRICTED ACCESS</h2>
+
+<p>CLASSIFIED FILE #27</p>
+
+<p>Enter Access Code</p>
+
+<input
+type="password"
+id="passwordInput"
+placeholder="Access Code">
+
+<br><br>
+
+<button onclick="checkPassword()">
+Unlock
+</button>
+
+<p id="passwordMessage"></p>
+
+</div>
+
+</div>   
+
+<div id="heart-container"></div>
+
+<!-- INTRO -->
+
+<section id="intro" class="screen">
+
+<div class="card">
+
+<h4> CLASSIFIED FILE #BIRTHDAY 🎂</h4>
+
+<h1>FOR MY MAN </h1>
+
+<p>Subject Detected: Mr. Sunny Chahal</p>
+
+<p>Level Unlocking: 27</p>
+
+<button onclick="showScreen('mission1')">
+START MISSION
+</button>
+
+</div>
+
+</section>
+
+<!-- MISSION 1 -->
+
+<section id="mission1" class="screen">
+
+<div class="card">
+
+<h2> Mission 1</h2>
+
+<h3> Identity Verification</h3>
+
+<p> Are you Cute???</p>
+
+<button onclick="showScreen('mission2')">
+JUST CLICK ON YESSS😍
+</button>
+
+<button onclick="wrongAwesome()">
+NO I AM NOT
+</button>
+
+<p id="awesomeText"></p>
+
+</div>
+
+</section>
+
+<!-- MISSION 2 -->
+
+<section id="mission2" class="screen">
+
+<div class="card">
+
+<h2>Mission 2</h2>
+
+<h3>Threat Assessment</h3>
+
+<p>Do you think Harleen loves you?</p>
+
+<div id="loveButtons">
+
+<button onclick="correctLove()">
+YES YES YES ♾️
+</button>
+
+<button onclick="wrongLove()">
+NO SHE DOES NOT
+</button>
+
+</div>
+
+<p id="loveText"></p>
+
+</div>
+
+</section>
+
+<!-- MISSION 3 -->
+
+<section id="mission3" class="screen">
+
+<div class="card">
+
+<h2>THE WAY ISHU SEES YOU 👀</h2>
+
+<div class="stat">
+
+<p> MY PERSONAL MASTERPIECE 😎🔥🐦‍🔥</p>
+
+<div class="bar">
+<div class="fill" style="width:100%"></div>
+</div>
+
+</div>
+
+<div class="stat">
+
+<p>THE BEST PERSON I EVER MET 🌍🐰</p>
+
+<div class="bar">
+<div class="fill" style="width:100%"></div>
+</div>
+
+</div>
+
+<div class="stat">
+
+<p> LOOKING LIKE A SNACK 😋😙 </p>
+
+<div class="bar">
+<div class="fill" style="width:100%"></div>
+</div>
+
+</div>
+
+<div class="stat">
+
+<p>MY WEAKNESS 🤭</p>
+
+<div class="bar">
+<div class="fill" style="width:100%"></div>
+</div>
+
+</div>
+
+<div class="stat">
+
+<p>LOOKING GOOOODD FROM EVERY ANGLE ❤️</p>
+
+<div class="bar">
+<div class="fill" style="width:100%"></div>
+</div>
+
+</div>
+
+<button onclick="showScreen('mission4')">
+CONTINUE
+</button>
+
+</div>
+
+</section>
+
+<!-- MISSION 4 -->
+
+<section id="mission4" class="screen">
+
+<div class="card">
+
+<h2> Find The Hidden Heart 💜</h2>
+
+<p>One of these boxes contains something important.</p>
+
+<div class="heart-grid">
+
+<button class="box" onclick="checkHeart(1)">?</button>
+<button class="box" onclick="checkHeart(2)">?</button>
+<button class="box" onclick="checkHeart(3)">?</button>
+
+<button class="box" onclick="checkHeart(4)">?</button>
+<button class="box" onclick="checkHeart(5)">?</button>
+<button class="box" onclick="checkHeart(6)">?</button>
+
+<button class="box" onclick="checkHeart(7)">?</button>
+<button class="box" onclick="checkHeart(8)">?</button>
+<button class="box" onclick="checkHeart(9)">?</button>
+
+</div>
+
+<p id="heartResult"></p>
+
+</div>
+
+</section>
+
+<!-- MISSION 5 -->
+
+<section id="mission5" class="screen">
+
+<div class="card">
+
+<h2>🏆 KBC Love Challenge 🏆</h2>
+
+<p id="question"></p>
+
+<div id="answers"></div>
+
+<p id="quizResult"></p>
+
+<p id="scoreDisplay"></p>
+
+</div>
+
+</section>
+
+<!-- MISSION 6 -->
+
+<section id="album" class="screen">
+
+<div class="card">
+
+<h2>📸 Confidential Memory Archive</h2>
+
+<p>Access Granted ❤️</p>
+
+<p>
+Congratulations on completing the KBC Love Challenge.
+You have unlocked some special memories 💫.
+</p>
+
+<div class="gallery">
+
+<div class="memory-card">
+<img src="images/img1.jpg" alt="Memory 1">
+<p>First Meeting🍔 City central + Newton</p>
+</div>
+
+<div class="memory-card">
+<img src="images/img5.jpg" alt="Memory 4">
+<p>Jdon pta lgea c apna ghr nede hi aa </p>
+</div>
+
+<div class="memory-card">
+<img src="images/img2.jpg" alt="Memory 2">
+<p>Our First Date❤️, chaiwala remember?? Main first time oho shoes pye c special</p>
+</div>
+
+<div class="memory-card">
+<img src="images/img3.jpg" alt="Memory 3">
+<p>Burnaby mountain, jdon first time haath fdea c... Pr thonu ahe yaad ni hona</p>
+</div>
+
+<div class="memory-card">
+<img src="images/img4.jpg" alt="Memory 4">
+<p>Hmm.. ahe jdon tuc resume len aye c ghr de bahar, formal look vich</p>
+</div>
+
+<div class="memory-card">
+<img src="images/img6.jpg" alt="Memory 4">
+<p>Drunk hoke jdon mnu ghr kol bulaya c 🐰</p>
+</div>
+
+</div>
+
+<button onclick="showScreen('mission6')">
+Continue →
+</button>
+
+</div>
+
+</section>
+
+<!-- MISSION 7 -->
+
+<section id="mission6" class="screen">
+
+<div class="card">
+
+<h2>Final Question</h2>
+
+<p>Do u miss your Harleen????</p>
+
+<div class="love-area">
+
+<button id="yesBtn" onclick="showScreen('finalScreen')">
+YESSS ❤️😘
+</button>
+
+<button id="noBtn">
+NOOO 😒
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL -->
+
+<section id="finalScreen" class="screen">
+
+<div class="card">
+
+<h1> Mission Complete 💜</h1>
+
+<p>
+
+Happy 27th Birthday Sohnea... ❤️</p>
+<p>
+God bless u puttar</p>
+
+<p>
+
+I love you so so so much and I miss u crazily every single day...
+
+I wish, I was there right now to hug u, kiss u, hold u in my arms on your special day.... 
+
+</p>
+
+<p>
+You don't even know how much you mean to me.
+</p>
+
+<h2> Once again Happy Birthday Mr. Simranpreet Singh Chahal... 💜❤️💞💗💖🩷🌸</h2>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
